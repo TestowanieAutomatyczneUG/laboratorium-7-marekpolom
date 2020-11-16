@@ -1,4 +1,4 @@
-# A sample Python project
+# A sample Python project [![Coverage Status](https://coveralls.io/repos/github/TestowanieAutomatyczneUG/laboratorium-7-marekpolom/badge.svg?branch=master)](https://coveralls.io/github/TestowanieAutomatyczneUG/laboratorium-7-marekpolom?branch=master)
 
 ![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
 
