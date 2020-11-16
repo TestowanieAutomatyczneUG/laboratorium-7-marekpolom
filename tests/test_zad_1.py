@@ -1,6 +1,7 @@
 import unittest
 
 from sample.zad_1 import IsPangram
+from parameterized import parameterized
 
 class TestZad1(unittest.TestCase):
     def setUp(self):
@@ -18,6 +19,16 @@ class TestZad1(unittest.TestCase):
                 self.assertEqual(self.tmp.pangram(inp), result)
 
         fileTest.close()
+
+    @parameterized.expand([
+        ("Pack my box with five dozen liquor jugs", 'To pangram'),
+        ("Jived fox nymph grabs quick waltz.", 'To pangram'),
+        ("How vexingly quick daft zebras jump!", 'To pangram'),
+        ("Pack", 'To nie pangram'),
+        ("quick waltz.", 'To nie pangram'),
+    ])
+    def test_is_pangram(self, inp, exp):
+        self.assertEqual(self.tmp.pangram(inp), exp)
 
 
 if __name__ == '__main__':
